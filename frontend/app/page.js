@@ -7,7 +7,7 @@ import {
   Search, Bookmark, Home, SlidersHorizontal, LogOut
 } from "lucide-react";
 
-const API = "http://localhost:5000";
+const API = "https://cuhacking-2025-project.onrender.com";
 
 /* ===================== AUTH SCREEN ===================== */
 function AuthScreen({ onLogin }) {
@@ -51,7 +51,7 @@ function AuthScreen({ onLogin }) {
       >
         <div className="auth-logo">
           <div className="auth-logo-icon">🏠</div>
-          <h1>Shelter<span>Match</span></h1>
+          <h1>ShelterMatch</h1>
           <p>Ottawa&apos;s shelter discovery platform</p>
         </div>
 

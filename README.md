@@ -1,6 +1,7 @@
 # ShelterMatch Ottawa
 
 **Live:** [sheltermatchottawa.shop](https://sheltermatchottawa.shop/)
+**Backend API:** [cuhacking-2025-project.onrender.com](https://cuhacking-2025-project.onrender.com)
 
 A modern shelter discovery platform for Ottawa — swipe through shelters, filter by your needs, and find the right fit. Built with a glassmorphism dark UI and smooth drag-to-swipe interactions.
 
@@ -117,11 +118,13 @@ Opens at **http://localhost:3000**
 
 ### Backend
 
-The Express API server needs a separate host (Railway, Render, etc.):
+The Express API server is hosted on Render:
 
-1. Deploy from GitHub
-2. Set start command: `node server.js`
-3. Update the `API` constant in `frontend/app/page.js` to your backend URL
+- [https://cuhacking-2025-project.onrender.com](https://cuhacking-2025-project.onrender.com)
+
+The frontend is already configured to use this URL for all API calls.
+
+If you change the backend URL, update the `API` constant in `frontend/app/page.js`.
 
 For publishing to App Store / Google Play:
 ```bash
