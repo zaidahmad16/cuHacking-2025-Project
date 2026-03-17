@@ -1,0 +1,31 @@
+{
+  "demo-user-123": {
+    "likedShelters": [],
+    "skippedShelters": [
+      "shelter-1",
+      "shelter-2",
+      "shelter-3",
+      "shelter-4",
+      "shelter-5",
+      "shelter-6"
+    ]
+  },
+  "6d4569c0-ab6b-4ad8-a530-a081a7d8e8bb": {
+    "likedShelters": [
+      "shelter-15"
+    ],
+    "skippedShelters": [
+      "shelter-14",
+      "shelter-15",
+      "shelter-13",
+      "shelter-12",
+      "shelter-11",
+      "shelter-10",
+      "shelter-9",
+      "shelter-8",
+      "shelter-7",
+      "shelter-6",
+      "shelter-5"
+    ]
+  }
+}

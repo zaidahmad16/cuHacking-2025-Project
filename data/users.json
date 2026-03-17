@@ -1,0 +1,23 @@
+{
+  "demo@test.com": {
+    "id": "demo-user-123",
+    "email": "demo@test.com",
+    "password": "demo123",
+    "name": "Demo User",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  "zaidahmad8060@gmail.com": {
+    "id": "79ad36c8-6de8-48db-b8db-5244d68c588a",
+    "email": "zaidahmad8060@gmail.com",
+    "password": "121243434",
+    "name": "zaid",
+    "createdAt": "2026-03-17T00:33:24.885Z"
+  },
+  "harryzhang676741@gmail.com": {
+    "id": "6d4569c0-ab6b-4ad8-a530-a081a7d8e8bb",
+    "email": "harryzhang676741@gmail.com",
+    "password": "34343436235",
+    "name": "zaid",
+    "createdAt": "2026-03-17T01:01:42.357Z"
+  }
+}
