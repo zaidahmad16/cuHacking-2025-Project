@@ -1,5 +1,7 @@
 # ShelterMatch Ottawa
 
+**Live:** [sheltermatchottawa.shop](https://sheltermatchottawa.shop/)
+
 A modern shelter discovery platform for Ottawa — swipe through shelters, filter by your needs, and find the right fit. Built with a glassmorphism dark UI and smooth drag-to-swipe interactions.
 
 Built for **cuHacking 2025**.
@@ -102,21 +104,24 @@ Opens at **http://localhost:3000**
 
 ## Deployment
 
-### Frontend → Vercel (free)
+**Frontend** is deployed on [Netlify](https://www.netlify.com/) at [sheltermatchottawa.shop](https://sheltermatchottawa.shop/).
 
-1. Push to GitHub
-2. Import repo at [vercel.com](https://vercel.com)
-3. Set root directory to `frontend`
-4. Vercel auto-detects Next.js — deploy
+### Netlify Setup
 
-### Backend → Railway (free)
+1. Connect your GitHub repo at [netlify.com](https://www.netlify.com/)
+2. Set **base directory** to `frontend`
+3. Set **build command** to `npm run build`
+4. Set **publish directory** to `frontend/.next`
+5. Netlify auto-installs the `@netlify/plugin-nextjs` plugin for Next.js support
+6. Add custom domain `sheltermatchottawa.shop` in Domain settings
 
-1. Create project at [railway.app](https://railway.app)
-2. Deploy from GitHub
-3. Set start command: `node server.js`
-4. Update the `API` constant in `frontend/app/page.js` to your Railway URL
+### Backend
 
-### Option 4: Expo Application Services (Mobile)
+The Express API server needs a separate host (Railway, Render, etc.):
+
+1. Deploy from GitHub
+2. Set start command: `node server.js`
+3. Update the `API` constant in `frontend/app/page.js` to your backend URL
 
 For publishing to App Store / Google Play:
 ```bash
