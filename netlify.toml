@@ -1,4 +1,7 @@
 [build]
   base = "frontend"
   command = "npm run build"
-  publish = ".next"
+
+# Let the Netlify Next.js plugin handle SSR/ISR and routing
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

@@ -12,10 +12,12 @@
     "framer-motion": "^12.37.0",
     "lucide-react": "^0.577.0",
     "next": "16.1.7",
+    "ottawa-shelter-finder-backend": "file:..",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.0.0",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.1.7",

@@ -107,6 +107,7 @@ body {
   font-weight: 800;
   letter-spacing: -0.5px;
   background: linear-gradient(135deg, var(--primary) 0%, var(--teal) 50%, var(--emerald) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -216,11 +217,13 @@ body {
   font-weight: 800;
   letter-spacing: -0.5px;
   background: linear-gradient(135deg, var(--text), var(--text-secondary));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .auth-logo h1 span {
   background: linear-gradient(135deg, var(--primary), var(--teal));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -375,6 +378,7 @@ body {
   font-weight: 800;
   margin-bottom: 24px;
   background: linear-gradient(135deg, var(--text), var(--text-secondary));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
