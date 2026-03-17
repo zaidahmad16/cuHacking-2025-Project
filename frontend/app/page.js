@@ -50,9 +50,9 @@ function AuthScreen({ onLogin }) {
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       >
         <div className="auth-logo">
-          <div className="auth-logo-icon">🏠</div>
+          <img src="/shelter-logo.png" alt="ShelterMatch Ottawa Logo" className="auth-logo-img" style={{ width: 64, height: 64, marginBottom: 8 }} />
           <h1>ShelterMatch</h1>
-          <p>Ottawa&apos;s shelter discovery platform</p>
+          <p>Ottawa's shelter discovery platform</p>
         </div>
 
         {error && (
@@ -474,7 +474,10 @@ export default function HomePage() {
       <div className="app-shell">
         {/* HEADER */}
         <div className="top-header">
-          <div className="logo">ShelterMatch</div>
+          <div className="logo">
+            <img src="/shelter-logo.png" alt="ShelterMatch Ottawa Logo" style={{ width: 36, height: 36, verticalAlign: 'middle', marginRight: 8 }} />
+            <span style={{ fontWeight: 700, fontSize: 22, verticalAlign: 'middle' }}>ShelterMatch</span>
+          </div>
           <div className="header-actions">
             <button className="header-btn" onClick={() => setShowFilters(true)} style={{ position: "relative" }}>
               <SlidersHorizontal size={18} />

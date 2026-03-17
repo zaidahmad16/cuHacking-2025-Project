@@ -1,38 +1,93 @@
 # ShelterMatch Ottawa
 
-**Live:** [sheltermatchottawa.shop](https://sheltermatchottawa.shop/)
+**Live Demo:** [sheltermatchottawa.shop](https://sheltermatchottawa.shop/)
 **Backend API:** [cuhacking-2025-project.onrender.com](https://cuhacking-2025-project.onrender.com)
 
-A modern shelter discovery platform for Ottawa — swipe through shelters, filter by your needs, and find the right fit. Built with a glassmorphism dark UI and smooth drag-to-swipe interactions.
+---
 
-Built for **cuHacking 2025**.
+## What is ShelterMatch Ottawa?
+ShelterMatch Ottawa is a modern, visually stunning web platform that helps people in Ottawa find the right shelter for their needs. Built for CUHacking 2025, it combines a Tinder-style swipe interface with smart filtering, real Ottawa shelter data, and a premium glassmorphism UI.
 
-## Features
+**Perfect for:**
+- People seeking shelter in Ottawa
+- Social workers and outreach teams
+- Hackathon judges looking for innovation, polish, and real-world impact
 
-- **Swipe-to-Match Interface** — Drag cards left to skip, right to save, with animated SAVE/SKIP stamps and spring physics
-- **Smart Filtering** — Filter shelters by gender, religion, race/background, and services/interests
-- **15 Ottawa Shelters** — Real Ottawa shelters with capacity, hours, phone, amenities, and demographic data
-- **Auth System** — Email/password registration and login
-- **Saved Shelters** — View, call, get directions, or remove saved shelters
-- **Detail Sheets** — Tap any card for full info, directions (Google Maps), and one-tap calling
-- **Bed Availability** — Color-coded status indicators (green/yellow/red)
-- **Dark Glassmorphism UI** — Animated gradients, glow effects, frosted-glass cards
+---
 
-## Team Members
+## How to Use the Website
+Visit [sheltermatchottawa.shop](https://sheltermatchottawa.shop/) on any device.
 
-- Zaid Ahmad
-- Vinit Rao
-- Jordan Yang
-- Evan Schincariol
+- **Register or log in** (email/password)
+- **Swipe right** to save a shelter, **swipe left** to skip
+- **Filter** by gender, religion, race/background, and services/interests
+- **Tap a card** for full details, directions, or to call the shelter
+- **View your saved shelters** in the Saved tab
+
+---
+
+## Key Features
+
+- **Tinder-style Swipe UI:** Drag cards left/right, animated stamps, spring physics
+- **Smart Filtering:** Instantly narrow shelters by gender, religion, race, and interests
+- **15 Real Ottawa Shelters:** With capacity, hours, phone, amenities, demographics
+- **Auth System:** Secure email/password registration and login
+- **Saved Shelters:** Quick access to directions, call, and removal
+- **Detail Sheets:** Full info overlays with Google Maps and one-tap calling
+- **Bed Availability:** Color-coded status (green/yellow/red)
+- **Dark Glassmorphism UI:** Animated gradients, glow effects, frosted-glass cards
+- **Mobile Responsive:** Works beautifully on phones, tablets, and desktops
+
+---
+
+## Why It's Impressive
+- **Premium UI:** Glassmorphism, animated gradients, glowing buttons
+- **Real Data:** 15 Ottawa shelters with demographic and service metadata
+- **Innovative UX:** Swipe-to-match, filter modal, detail overlays
+- **Full Stack:** Next.js frontend, Express backend, JSON database
+- **Easy Deployment:** Live on Netlify and Render, ready for real users
+
+---
+
+## Demo Account
+- **Email:** demo@test.com
+- **Password:** demo123
+
+Or register your own account!
+
+---
+
+## For Hackathon Judges
+ShelterMatch Ottawa is designed to be both visually impressive and genuinely useful. It solves a real problem for Ottawa's vulnerable populations, with a polished interface and robust backend. The codebase is clean, modular, and ready for extension (mobile, more cities, etc).
+
+**Explore the live site:** [sheltermatchottawa.shop](https://sheltermatchottawa.shop/)
+**Review the backend API:** [cuhacking-2025-project.onrender.com](https://cuhacking-2025-project.onrender.com)
+
+---
+
+## Full Feature List
+- Swipe-to-match interface
+- Animated cards and stamps
+- Filter by gender, religion, race, interests
+- Auth (register/login)
+- Saved shelters tab
+- Detail overlays with directions/call
+- Bed status indicators
+- Responsive design
+- Glassmorphism theme
+- Real Ottawa shelter data
+
+---
 
 ## Tech Stack
-
 | Layer | Technology |
 |-------|-----------|
 | **Frontend** | Next.js 16, React 19, Framer Motion, Lucide React |
 | **Styling** | Tailwind CSS 4 + custom CSS (glassmorphism, animations) |
 | **Backend** | Node.js + Express |
-| **Database** | JSON file storage (`data/` directory — zero setup) |
+| **Database** | JSON file storage (zero setup) |
+
+---
 
 ## Project Structure
 
@@ -50,6 +105,8 @@ Built for **cuHacking 2025**.
 │   └── package.json
 └── package.json           # Root package (backend deps)
 ```
+
+---
 
 ## Quick Start
 
@@ -89,6 +146,8 @@ Opens at **http://localhost:3000**
 4. Use the filter button to narrow by gender, religion, race, or services
 5. Tap a card to see full details, get directions, or call
 
+---
+
 ## API Endpoints
 
 | Method | Endpoint | Description |
@@ -102,6 +161,8 @@ Opens at **http://localhost:3000**
 | `POST` | `/swipe-left` | Skip a shelter (userId, shelterId) |
 | `GET` | `/saved-shelters?userId=` | Get saved shelters |
 | `DELETE` | `/saved-shelters/:id?userId=` | Remove saved shelter |
+
+---
 
 ## Deployment
 
