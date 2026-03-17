@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const PORT = process.env.PORT || 5000;
 
 // Data file paths
-const DATA_DIR = path.join(__dirname, 'data');
+const DATA_DIR = path.join('/tmp', 'data');
 const SHELTERS_FILE = path.join(DATA_DIR, 'shelters.json');
 const USERS_FILE = path.join(DATA_DIR, 'users.json');
 const SWIPES_FILE = path.join(DATA_DIR, 'swipes.json');
@@ -21,6 +21,16 @@ const SWIPES_FILE = path.join(DATA_DIR, 'swipes.json');
 if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }
+
+// On startup, copy original data files if /tmp/data/ is empty
+const origDataDir = path.join(__dirname, 'data');
+['shelters.json', 'users.json', 'swipes.json'].forEach(file => {
+  const tmpFile = path.join(DATA_DIR, file);
+  const origFile = path.join(origDataDir, file);
+  if (!fs.existsSync(tmpFile) && fs.existsSync(origFile)) {
+    fs.copyFileSync(origFile, tmpFile);
+  }
+});
 
 // Helper functions to read/write JSON files
 const readJSON = (filepath, defaultValue = []) => {
