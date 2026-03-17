@@ -11,9 +11,9 @@ ShelterMatch Ottawa is a modern, visually stunning web platform that helps peopl
 **Perfect for:**
 - People seeking shelter in Ottawa
 - Social workers and outreach teams
-- Hackathon judges looking for innovation, polish, and real-world impact
+- Hackathon judges looking for innovation, polish, and real-world impact.
 
----
+----------------------------------------
 
 ## How to Use the Website
 Visit [sheltermatchottawa.shop](https://sheltermatchottawa.shop/) on any device.
