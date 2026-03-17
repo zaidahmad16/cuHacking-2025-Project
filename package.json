@@ -1,40 +1,18 @@
 {
-  "name": "ottawa-shelter-finder",
+  "name": "ottawa-shelter-finder-backend",
   "version": "1.0.0",
-  "description": "Shelter finder app for homeless individuals in Ottawa",
-  "main": "node_modules/expo/AppEntry.js",
+  "description": "Express backend for ShelterMatch Ottawa",
+  "main": "server.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "backend": "node server.js",
-    "dev": "node server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "CUHacking 2025 Team",
   "license": "ISC",
   "dependencies": {
-    "@expo/metro-runtime": "~4.0.1",
-    "@react-navigation/bottom-tabs": "^7.2.0",
-    "@react-navigation/native": "^7.0.14",
-    "axios": "^1.8.3",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
-    "expo": "~52.0.0",
-    "expo-status-bar": "~2.0.1",
     "express": "^4.21.2",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-native": "0.76.7",
-    "react-native-safe-area-context": "^5.1.0",
-    "react-native-screens": "~4.4.0",
-    "react-native-web": "~0.19.13",
     "uuid": "^9.0.0"
-  },
-  "devDependencies": {
-    "@types/react": "~18.3.12",
-    "replace-in-file": "^8.4.0",
-    "typescript": "^5.3.3"
   }
 }
